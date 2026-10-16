@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About Mikaal Abdulla | Fintech Executive &amp; Startup Founder | Asia Pacific</title>
+<meta name="description" content="About Mikaal Abdulla, fintech executive and founder of 8 Securities: product firsts in Asia, E*TRADE's 14-market expansion, and an MBA from Columbia and LBS."/>
+<link rel="canonical" href="https://mikaalabdulla.netlify.app/about.html"/>
+<meta property="og:type" content="profile"/>
+<meta property="og:site_name" content="Mikaal Abdulla"/>
+<meta property="og:title" content="About Mikaal Abdulla | Fintech Executive &amp; Startup Founder"/>
+<meta property="og:description" content="About Mikaal Abdulla, fintech executive and founder of 8 Securities: product firsts in Asia, E*TRADE's 14-market expansion, and an MBA from Columbia and LBS."/>
+<meta property="og:image" content="https://mikaalabdulla.netlify.app/images/hero.jpg"/>
+<meta property="og:url" content="https://mikaalabdulla.netlify.app/about.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://mikaalabdulla.netlify.app/#person",
+      "name": "Mikaal Abdulla",
+      "jobTitle": "Fintech Executive and Startup Founder",
+      "url": "https://mikaalabdulla.netlify.app/",
+      "image": "https://mikaalabdulla.netlify.app/images/hero.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/mikaalabdulla/",
+        "https://www.youtube.com/channel/UCf_RtgOEvpRsKiwLPapWP4w",
+        "https://mikaalabdulla.wordpress.com/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Asia Pacific"
+      },
+      "description": "Mikaal Abdulla is a fintech executive and startup founder with two decades of experience building and scaling digital financial products across Asia Pacific, India, the Middle East, and Europe. He founded 8 Securities, Asia's first mobile-only brokerage, and led E*TRADE's expansion across 14 markets.",
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Columbia Business School"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "London Business School"
+        }
+      ],
+      "knowsAbout": [
+        "Fintech",
+        "Mobile investing",
+        "Online brokerage",
+        "Robo-advisory",
+        "Product strategy",
+        "Market expansion"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mikaalabdulla.netlify.app/#website",
+      "url": "https://mikaalabdulla.netlify.app/",
+      "name": "Mikaal Abdulla",
+      "description": "Mikaal Abdulla is a fintech executive and startup founder who launched Asia's first mobile-only brokerage and scaled E*TRADE across 14 markets.",
+      "publisher": {
+        "@id": "https://mikaalabdulla.netlify.app/#person"
+      },
+      "about": {
+        "@id": "https://mikaalabdulla.netlify.app/#person"
+      }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://mikaalabdulla.netlify.app/about.html#webpage",
+      "url": "https://mikaalabdulla.netlify.app/about.html",
+      "name": "About Mikaal Abdulla",
+      "isPartOf": {
+        "@id": "https://mikaalabdulla.netlify.app/#website"
+      },
+      "mainEntity": {
+        "@id": "https://mikaalabdulla.netlify.app/#person"
+      }
+    }
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Mikaal Abdulla';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Mikaal<span> Abdulla</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>Mikaal Abdulla</h1>
+  <p class="pg-sub">Mikaal Abdulla is a fintech executive and startup founder whose career spans technology consulting, multi-market expansion, and company building across Asia Pacific, India, the Middle East, and Europe.</p>
+</div>
+
+<!-- ══ PROFILE CARD ══════════════════════════════════════════════ -->
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="Mikaal Abdulla, fintech executive and startup founder"/></div>
+    <div>
+      <div class="pc-nm">Mikaal Abdulla</div>
+      <div class="pc-rl">Fintech Executive &amp; Startup Founder</div>
+      <div class="pc-lc">Asia Pacific</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT SECTIONS + SIDEBAR ══════════════════════════════════ -->
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+
+      <div class="csec">
+        <p class="cey">Product Innovation</p>
+        <h2>8 Securities and Asia's First Mobile-Only Brokerage</h2>
+        <p>Mikaal Abdulla founded 8 Securities and launched it as Asia's first mobile-only brokerage, at a time when the category did not yet exist in the region. Rather than adapting a desktop trading product for smaller screens, the company was built for mobile from the start, and it became the first licensed consumer financial services company in Asia to run fully on the cloud.</p>
+        <p>The platform went on to introduce a sequence of regional firsts: a robo-advisor, social trading, fractional shares, and subscription pricing that brought a Netflix-style model to retail investing. It also executed a stock trade end to end through an AI agent. The reasoning behind those decisions is covered in <a href="asias-first-mobile-brokerage.html">the product build behind 8 Securities</a>, and the pricing model gets its own examination in <a href="subscription-pricing-fintech.html">the case for subscription pricing in fintech</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Multi-Market Leadership</p>
+        <h2>Leading E*TRADE's Expansion Across 14 Markets</h2>
+        <p>Before founding 8 Securities, Abdulla spent a decade at E*TRADE leading financial product expansion across 14 markets in Asia, Europe, the Middle East, and India. Under his leadership, the regional business reached $11 billion in assets under management, $200 million in revenue, and $60 million in profit.</p>
+        <p>Those figures reflect execution sustained across very different regulatory regimes, consumer behaviors, and local infrastructure. Technology was only one part of the work; licensing, distribution, and local partnerships determined whether a market succeeded. His reflections in <a href="scaling-etrade-across-14-markets.html">lessons from E*TRADE's 14-market expansion</a> explain why that experience is rare among fintech founders. Career milestones and commentary on regional leadership appear on <a href="https://www.linkedin.com/in/mikaalabdulla/" target="_blank" rel="noopener">his LinkedIn profile</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Global Perspective</p>
+        <h2>Nine Cities, Three Regions, One Operating Approach</h2>
+        <p>Mikaal Abdulla has lived and worked in Silicon Valley, New York, London, Dubai, Mumbai, Tokyo, Singapore, Bangkok, and Hong Kong. That geographic scope shapes how he thinks about product, distribution, and culture. Each market carried its own lessons about what financial consumers expect and what regulators require.</p>
+        <p>Leading across multiple geographies means adapting strategy and execution to each environment while keeping a coherent company identity. That instinct for operating across contexts, not just within one, connects his consulting years, his E*TRADE decade, and his work as a founder. Video discussions of these themes are published on <a href="https://www.youtube.com/channel/UCf_RtgOEvpRsKiwLPapWP4w" target="_blank" rel="noopener">his YouTube channel</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Foundations</p>
+        <h2>From Deloitte Technology Consulting to Columbia and LBS</h2>
+        <p>Abdulla began his career in Deloitte's technology consulting practice, advising digital banks, online brokerages, and e-commerce startups. The work built structural fluency in how financial technology is actually assembled: the systems, the integrations, and the operating processes behind them.</p>
+        <p>He holds an MBA from Columbia Business School and London Business School. Consulting experience and business education together informed the decade at E*TRADE that followed, and the move to founding 8 Securities was less a pivot than the application of accumulated domain expertise at the ownership level.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Recognition &amp; Next Chapter</p>
+        <h2>TechCrunch Disrupt, AWS, and the Asia Fintech 100</h2>
+        <p>The product thesis behind 8 Securities, and the execution behind it, drew outside recognition. The company was a TechCrunch Disrupt finalist and was named an AWS Top 5 Startup in Asia, and Mikaal Abdulla's record includes a place on the Asia Fintech 100.</p>
+        <p>Education, mentoring, and writing form the next chapter of his work, drawing on two decades as a fintech executive and startup founder in Asia Pacific and beyond. Long-form essays on fintech product strategy appear on <a href="https://mikaalabdulla.wordpress.com/" target="_blank" rel="noopener">his WordPress blog</a>.</p>
+      </div>
+
+    </div>
+
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Full Name</span><span class="fv">Mikaal Abdulla</span></div>
+        <div class="fr"><span class="fl">Role</span><span class="fv">Fintech Executive &amp; Startup Founder</span></div>
+        <div class="fr"><span class="fl">Founded</span><span class="fv">8 Securities</span></div>
+        <div class="fr"><span class="fl">E*TRADE</span><span class="fv">14 markets &middot; $11B AUM</span></div>
+        <div class="fr"><span class="fl">Education</span><span class="fv">MBA, Columbia Business School &amp; London Business School</span></div>
+        <div class="fr"><span class="fl">Recognition</span><span class="fv">TechCrunch Disrupt finalist, AWS Top 5 Startup in Asia, Asia Fintech 100</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow Mikaal Abdulla on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">Mikaal Abdulla in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Mikaal Abdulla. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
