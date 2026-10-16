@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Mikaal Abdulla | Fintech Executive &amp; Startup Founder | Asia Pacific</title>
+<meta name="description" content="Mikaal Abdulla is a fintech executive and startup founder who launched Asia's first mobile-only brokerage and scaled E*TRADE across 14 markets."/>
+<link rel="canonical" href="https://mikaalabdulla.netlify.app/"/>
+<meta property="og:type" content="profile"/>
+<meta property="og:site_name" content="Mikaal Abdulla"/>
+<meta property="og:title" content="Mikaal Abdulla | Fintech Executive &amp; Startup Founder"/>
+<meta property="og:description" content="Mikaal Abdulla is a fintech executive and startup founder who launched Asia's first mobile-only brokerage and scaled E*TRADE across 14 markets."/>
+<meta property="og:image" content="https://mikaalabdulla.netlify.app/images/hero.jpg"/>
+<meta property="og:url" content="https://mikaalabdulla.netlify.app/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://mikaalabdulla.netlify.app/#person",
+      "name": "Mikaal Abdulla",
+      "jobTitle": "Fintech Executive and Startup Founder",
+      "url": "https://mikaalabdulla.netlify.app/",
+      "image": "https://mikaalabdulla.netlify.app/images/hero.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/mikaalabdulla/",
+        "https://www.youtube.com/channel/UCf_RtgOEvpRsKiwLPapWP4w",
+        "https://mikaalabdulla.wordpress.com/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Asia Pacific"
+      },
+      "description": "Mikaal Abdulla is a fintech executive and startup founder with two decades of experience building and scaling digital financial products across Asia Pacific, India, the Middle East, and Europe. He founded 8 Securities, Asia's first mobile-only brokerage, and led E*TRADE's expansion across 14 markets.",
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Columbia Business School"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "London Business School"
+        }
+      ],
+      "knowsAbout": [
+        "Fintech",
+        "Mobile investing",
+        "Online brokerage",
+        "Robo-advisory",
+        "Product strategy",
+        "Market expansion"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://mikaalabdulla.netlify.app/#website",
+      "url": "https://mikaalabdulla.netlify.app/",
+      "name": "Mikaal Abdulla",
+      "description": "Mikaal Abdulla is a fintech executive and startup founder who launched Asia's first mobile-only brokerage and scaled E*TRADE across 14 markets.",
+      "publisher": {
+        "@id": "https://mikaalabdulla.netlify.app/#person"
+      },
+      "about": {
+        "@id": "https://mikaalabdulla.netlify.app/#person"
+      }
+    }
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='Mikaal Abdulla';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-home'],soc);
+    render(['sml-news-home'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+
+<!-- ══ STICKY NAV ══════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Mikaal<span> Abdulla</span></a>
+  <ul class="nav-links">
+    <li><a class="active" href="/">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HERO ═══════════════════════════════════════════════════════ -->
+<div class="h-hero">
+  <div class="h-inner">
+    <div class="h-photo"><img src="images/hero.jpg" alt="Mikaal Abdulla, fintech executive and startup founder"/></div>
+    <div>
+      <h1 class="h-name">Mikaal Abdulla</h1>
+      <p class="h-role">Fintech Executive &amp; Startup Founder</p>
+      <p class="h-desc">Mikaal Abdulla has spent two decades building and scaling digital financial products across Asia Pacific, India, the Middle East, and Europe, from founding 8 Securities, Asia's first mobile-only brokerage, to leading E*TRADE's expansion across 14 markets.</p>
+      <div class="h-loc">Asia Pacific</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT TEASER ═══════════════════════════════════════════════ -->
+<div class="h-about">
+  <div class="ha-inner">
+    <div class="ha-text">
+      <p class="eyebrow">Fintech Executive &amp; Founder</p>
+      <h2 class="sec-title">Two Decades Building Financial Products Across Three Regions</h2>
+      <p>Mikaal Abdulla has worked across nearly every layer of the fintech stack: technology consulting at Deloitte, a decade of regional expansion at E*TRADE, and company building as the founder of 8 Securities. Few fintech professionals carry experience in all three, and that range shapes how he approaches product and market strategy.</p>
+      <p>Under his leadership, 8 Securities launched as Asia's first mobile-only brokerage and went on to introduce the region's first robo-advisor, social trading platform, and subscription pricing model. The story of <a href="asias-first-mobile-brokerage.html">building Asia's first mobile-only brokerage</a> is a study in market timing and product conviction.</p>
+      <p>Abdulla has lived and worked in Silicon Valley, New York, London, Dubai, Mumbai, Tokyo, Singapore, Bangkok, and Hong Kong. That geographic breadth runs through every phase of <a href="about.html">Mikaal Abdulla's fintech career</a>, from E*TRADE's 14-market expansion to the products he launched in Asia.</p>
+      <a class="ha-link" href="about.html">Learn more →</a>
+    </div>
+    <div><img class="ha-photo" src="images/hero-secondary.jpg" alt="Portrait of Mikaal Abdulla, founder of 8 Securities"/></div>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ═══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-home')">Follow Mikaal Abdulla on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-home"><div id="sml-soc-home" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-home')">Mikaal Abdulla in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-home"><div id="sml-news-home" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<!-- ══ LATEST ARTICLES ════════════════════════════════════════════ -->
+<div class="h-press">
+  <div class="pi">
+    <p class="eyebrow">Insights &amp; Perspectives</p>
+    <h2 class="sec-title">Writing on Fintech, Product, and Market Expansion</h2>
+    <div class="cards">
+      <a class="card card-article" href="asias-first-mobile-brokerage.html">
+        <div class="ct-img"><img src="images/article-1.jpg" alt="Building Asia's First Mobile-Only Brokerage"/></div>
+        <div class="cb">
+          <div class="cb-pub">Product Innovation</div>
+          <div class="cb-hl">Building Asia's First Mobile-Only Brokerage</div>
+          <div class="cb-yr">September 8, 2026</div>
+        </div>
+      </a>
+      <a class="card card-article" href="scaling-etrade-across-14-markets.html">
+        <div class="ct-img"><img src="images/article-2.jpg" alt="Scaling E*TRADE Across 14 Markets"/></div>
+        <div class="cb">
+          <div class="cb-pub">Market Expansion</div>
+          <div class="cb-hl">Scaling E*TRADE Across 14 Markets</div>
+          <div class="cb-yr">September 22, 2026</div>
+        </div>
+      </a>
+      <a class="card card-article" href="subscription-pricing-fintech.html">
+        <div class="ct-img"><img src="images/article-3.jpg" alt="Subscription Pricing in Fintech: Why the Model Works and Where It Falls Short"/></div>
+        <div class="cb">
+          <div class="cb-pub">Fintech Strategy</div>
+          <div class="cb-hl">Subscription Pricing in Fintech: Why the Model Works and Where It Falls Short</div>
+          <div class="cb-yr">October 6, 2026</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CONTACT TEASER ═════════════════════════════════════════════ -->
+<div class="h-contact">
+  <div class="hc-inner">
+    <div>
+      <p class="eyebrow">Get in Touch</p>
+      <h2 class="sec-title">Contact</h2>
+      <form class="cf" name="contact-home" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact-home"/>
+        <p hidden><label>Leave blank <input name="bot-field"/></label></p>
+        <div><label>Your Name</label><input type="text" name="name" placeholder="Your name" required/></div>
+        <div><label>Email</label><input type="email" name="email" placeholder="email@example.com" required/></div>
+        <div><label>Message</label><textarea name="message" placeholder="Your message..." required></textarea></div>
+        <button class="btn-sm" type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="hcp">
+      <h3 class="hc-title">Let's connect.</h3>
+      <p>For speaking engagements, advisory conversations, media requests, or mentoring inquiries, send a short note through the form and it will reach Mikaal directly.</p>
+     
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 Mikaal Abdulla. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
